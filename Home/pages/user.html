@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中联电力－国际一流的电力服务提供商</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<!-- <link rel="stylesheet" href="../css/phocus.css"> -->
+	<link rel="stylesheet" href="../css/temp.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../Admin/css/temp.css">
+</head>
+<body>
+	<div class="wrap">
+		<!-- 顶部标题条 -->
+		<div class="header">
+			<table width="100%">
+				<tr>
+					<td width="200" align="center">
+						<a href="shijk.html" target="frame">
+							<img src="../img/logo2.png" width="150" height="auto">
+						</a>
+					</td>
+					<td align="right">
+						<span class="txt-default">你好, 张总</span>
+					</td>
+					<td width="10"></td>
+					<td width="120" align="right">
+						<a href="shijk.html" target="frame">
+							<span class="btn btn-default">监控</span>
+						</a>
+						<a href="../index.html">
+							<span class="btn btn-gray">退出</span>
+						</a>
+					</td>
+					<td width="30"></td>
+				</tr>
+			</table>
+		</div>
+
+		
+		<!-- 左侧导航栏 -->
+		<div class="navlist">
+			<div class="toplist_holder">
+				<ul class="toplist">
+					<li class="ontheshow">
+						<span class="icontext" id="pds_icon">北</span>
+						<span class="navtext" id="pds_name">北京联合大学</span>
+						<span class="close_open">
+							<img src="../icons/caidan.svg" width="20px" height="auto" status="0">
+						</span>
+					</li>
+					<li class="onthehide">
+						<span class="navtext">国中大厦</span>
+					</li>
+					<li class="onthehide">
+						<span class="navtext">北京移动大厦</span>
+					</li>
+					<li class="onthehide">
+						<span class="navtext">花家地小学</span>
+					</li>
+				</ul>
+			</div>
+			<div class="btmlist_holder">
+				<ul class="listitem">
+					<li>
+						<a href="shidata.html" target="frame">
+							<span class="btm_icon"><i class="fa fa-inbox"></i></span>
+							<span class="list_text">实时数据</span>
+						</a>
+					</li>
+					<li>
+						<a href="lishidata.html" target="frame">
+							<span class="btm_icon"><i class="fa fa-history"></i></span>
+							<span class="list_text">历史数据</span>
+						</a>
+					</li>
+					<li>
+						<a href="shiqu.html" target="frame">
+							<span class="btm_icon"><i class="fa fa-line-chart"></i></span>
+							<span class="list_text">实时曲线</span>
+						</a>
+					</li>
+					<li>
+						<a href="lishiqu.html" target="frame">
+							<span class="btm_icon"><i class="fa fa-paint-brush "></i></span>
+							<span class="list_text">历史曲线</span>
+						</a>
+					</li>
+					<li>
+						<a href="yaoxin.html" target="frame">
+							<span class="btm_icon"><i class="fa fa-cube"></i></span>
+							<span class="list_text">遥信变位</span>
+						</a>
+					</li>
+					<!-- <li>
+						<a href="dianya.html" target="frame">
+							<span class="btm_icon"><i class="fa fa-bar-chart"></i></span>
+							<span class="list_text">电压棒图</span>
+						</a>
+					</li> -->
+					<li>
+						<a href="seo.html" target="frame">
+							<span class="btm_icon"><i class="fa fa-tags"></i></span>
+							<span class="list_text">SOE事件</span>
+						</a>
+					</li>
+					<li>
+						<a href="fuhe.html" target="frame">
+							<span class="btm_icon"><i class="fa fa-random"></i></span>
+							<span class="list_text">负荷曲线</span>
+						</a>
+					</li>
+					<li>
+						<a href="yuexian.html" target="frame">
+							<span class="btm_icon"><i class="fa fa-tasks"></i></span>
+							<span class="list_text">越限事件</span>
+						</a>
+					</li>
+					<li>
+						<a href="dianliang.html" target="frame">
+							<span class="btm_icon"><i class="fa fa-plug"></i></span>
+							<span class="list_text">电量查询</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<!-- 右侧主体内容 -->
+		<div class="main">
+			<iframe src="shijk.html" name="frame" frameborder="0"></iframe>
+		</div>
+	</div>	
+
+
+	<!-- 背景遮罩 -->	
+	<div class="mask"></div>
+
+
+	<!-- 操作成功提示 -->
+	<div class="success">
+		<p>
+			<span class="icon"><i class="fa fa-check-circle-o fa-2x"></i></span>
+			<span class="hint_text">恭喜, 操作成功!</span>
+		</p>
+	</div>
+
+
+	<!-- 添加/编辑角色 -->
+	<div class="popup" role="addQuxian" width="500" height="300">
+		<!-- 头部 -->
+		<div class="pop_head">
+			<h2 class="title">添加对比曲线</h2>
+			<span class="close_btn" hide="popup" role="addQuxian"><i class="fa fa-times fa-lg"></i></span>
+		</div>
+		
+		<!-- 主体 -->
+		<div class="pop_body">
+			<div class="tableWrap addQuxian">
+				<table width="75%">
+					<tr>
+						<td>
+							<div class="box_set">
+								<i class="fa fa-asterisk required"></i>
+								<span class="txt-default">线路开关</span>
+								<select name="" id="" class="default">
+									<option value="">112线</option>
+									<option value="">230线</option>
+								</select>
+								<i class="fa fa-caret-down arrow"></i>
+							</div>
+						</td>
+					</tr>
+					<tr><td height="20"></td></tr>
+					<tr>
+						<td>
+							<div class="box_set">
+								<i class="fa fa-asterisk required"></i>
+								<span class="txt-default">遥测变量</span>
+								<select name="" id="" class="default">
+									<option value="">WE</option>
+									<option value="">AE</option>
+								</select>
+								<i class="fa fa-caret-down arrow"></i>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!-- 尾部 -->
+		<div class="pop_tail">
+			<span class="btn btn-default" hide="popup" role="addQuxian" id="submitaddQuxian">
+				<i class="fa fa-check"></i> 确认
+			</span>
+			<span class="btn btn-gray" hide="popup" role="addQuxian">
+				<i class="fa fa-remove"></i> 取消
+			</span>
+		</div>
+	</div>
+
+
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/phocus.js"></script>
+	<script src="../js/temp.js"></script>
+	<script src="../../Admin/js/temp.js"></script>
+
+</body>
+</html>

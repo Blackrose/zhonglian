@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中联电力－国际领先的电力服务提供商</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/phocus.css">
+	<link rel="stylesheet" href="../css/temp.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+<body>
+	<div class="wrap">
+		<!-- 顶部标题条 -->
+		<div class="header">
+			<table width="100%">
+				<tr>
+					<td width="200" align="center">
+						<a href="default.html" target="frame">
+							<img src="../img/logo2.png" width="150" height="auto">
+						</a>
+					</td>
+					<td align="right">
+						<span class="welcome">你好, 张总</span>
+					</td>
+					<td width="10"></td>
+					<td width="120" align="right">
+						<span class="btn btn-default" show="modal" role="setpassModal">密码</span>
+						<a href="../index.html">
+							<span class="btn btn-gray">退出</span>
+						</a>
+					</td>
+					<td width="30"></td>
+				</tr>
+			</table>
+		</div>
+
+		
+		<!-- 左侧导航栏 -->
+		<div class="nav_wrap">
+			<div class="nav">
+				<span class="prover">
+					<i class="fa fa-caret-left fa-lg thecaret"></i>
+					<i class="porver_text">系统用户</i>
+				</span>
+				<span class="expand" id="expand_btn" status="0"><i class="fa fa-bars"></i></span>
+				<ul class="listitem">
+					<li>
+						<a href="default.html" target="frame">
+							<span class="btm_icon"><i class="fa fa-user fa-lg"></i></span>
+							<span class="list_text">系统用户</span>
+						</a>
+					</li>
+					<li>
+						<a href="role.html" target="frame">
+							<span class="btm_icon"><i class="fa fa-wrench fa-lg"></i></span>
+							<span class="list_text">角色列表</span>
+						</a>
+					</li>
+					<li>
+						<a href="poster.html" target="frame">
+							<span class="btm_icon"><i class="fa fa-book fa-lg"></i></span>
+							<span class="list_text">封面管理</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<!-- 右侧主体内容 -->
+		<div class="main">
+			<iframe src="default.html" name="frame" frameborder="0"></iframe>
+		</div>
+	</div>	
+
+
+
+
+
+
+<!-- ******************各种弹出框 开始****************** -->
+
+	<!-- 背景遮罩 -->	
+	<div class="mask"></div>
+
+
+	<!-- 操作成功提示 -->
+	<div class="success">
+		<p>
+			<span class="icon"><i class="fa fa-check-circle-o fa-2x"></i></span>
+			<span class="hint_text">恭喜, 操作成功!</span>
+		</p>
+	</div>
+
+
+	<!-- 找回密码弹出框 -->
+	<div class="popup" role="setpassModal" width="400" height="320">
+		<!-- 头部 -->
+		<div class="pop_head">
+			<h2 class="title">重置密码</h2>
+			<span class="close_btn"  hide="popup" role="setpassModal"><i class="fa fa-times fa-lg"></i></span>
+		</div>
+
+		<!-- 主体 -->
+		<div class="pop_body">
+			<div class="tableWrap setpassModal">
+				<table class="passBox">
+					<tr>
+						<td>
+							<div class="input_set">
+								<span class="icon"><i class="fa fa-lock"></i></span>
+								<input type="password" class="default" placeholder="当前密码">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="input_set">
+								<span class="icon"><i class="fa fa-lock"></i></span>
+								<input type="password" class="default" placeholder="输入新密码">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="input_set">
+								<span class="icon"><i class="fa fa-lock"></i></span>
+								<input type="password" class="default" placeholder="确认密码">
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!-- 尾部 -->
+		<div class="pop_tail">
+			<span class="btn btn-default" hide="popup" role="setpassModal" id="submitPass">
+				<i class="fa fa-check"></i> 确认
+			</span>
+			<span class="btn btn-gray"  hide="popup" role="setpassModal">
+				<i class="fa fa-remove"></i> 取消
+			</span>
+		</div>
+	</div>
+
+	
+	<!-- 停用用户 -->
+	<div class="popup" role="stopUser" width="400" height="250">
+		<!-- 头部 -->
+		<div class="pop_head">
+			<h2 class="title">停用用户</h2>
+			<span class="close_btn" hide="popup" role="stopUser"><i class="fa fa-times fa-lg"></i></span>
+		</div>
+		
+		<!-- 主体 -->
+		<div class="pop_body">
+			<div class="tableWrap stopUser">
+				<table class="stop_user">
+					<tr>
+						<td rowspan="2" align="right">
+							<span class="iconCircle"><i class="fa fa-stop fa-lg"></i></span>
+						</td>
+						<td><h2>停用用户</h2></td>
+					</tr>
+					<tr>
+						<td><span class="txt-default">您确认要停用此用户吗?</span></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!-- 尾部 -->
+		<div class="pop_tail">
+			<span class="btn btn-default" hide="popup" role="stopUser" id="submitStop">
+				<i class="fa fa-check"></i> 确认
+			</span>
+			<span class="btn btn-gray" hide="popup" role="stopUser">
+				<i class="fa fa-remove"></i> 取消
+			</span>
+		</div>
+	</div>
+
+
+
+	<!-- 启用用户 -->
+	<div class="popup" role="startUser" width="400" height="250">
+		<!-- 头部 -->
+		<div class="pop_head">
+			<h2 class="title">启用用户</h2>
+			<span class="close_btn" hide="popup" role="startUser"><i class="fa fa-times fa-lg"></i></span>
+		</div>
+		
+		<!-- 主体 -->
+		<div class="pop_body">
+			<div class="tableWrap startUser">
+				<table class="stop_user">
+					<tr>
+						<td rowspan="2" align="right">
+							<span class="iconCircle"><i class="fa fa-play fa-lg"></i></span>
+						</td>
+						<td><h2>启用用户</h2></td>
+					</tr>
+					<tr>
+						<td><span class="txt-default">您确认要启用此用户吗?</span></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!-- 尾部 -->
+		<div class="pop_tail">
+			<span class="btn btn-default" hide="popup" role="startUser" id="submitStart">
+				<i class="fa fa-check"></i> 确认
+			</span>
+			<span class="btn btn-gray" hide="popup" role="startUser">
+				<i class="fa fa-remove"></i> 取消
+			</span>
+		</div>
+	</div>
+
+
+
+	<!-- 删除用户 -->
+	<div class="popup" role="removeUser" width="400" height="250">
+		<!-- 头部 -->
+		<div class="pop_head">
+			<h2 class="title">删除用户</h2>
+			<span class="close_btn" hide="popup" role="removeUser"><i class="fa fa-times fa-lg"></i></span>
+		</div>
+		
+		<!-- 主体 -->
+		<div class="pop_body">
+			<div class="tableWrap removeUser">
+				<table class="stop_user">
+					<tr>
+						<td rowspan="2" align="right">
+							<span class="iconCircle"><i class="fa fa-remove fa-lg"></i></span>
+						</td>
+						<td><h2>删除用户</h2></td>
+					</tr>
+					<tr>
+						<td><span class="txt-default">您确认要删除此用户吗?</span></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!-- 尾部 -->
+		<div class="pop_tail">
+			<span class="btn btn-default" hide="popup" role="removeUser" id="submitRemove">
+				<i class="fa fa-check"></i> 确认
+			</span>
+			<span class="btn btn-gray" hide="popup" role="removeUser">
+				<i class="fa fa-remove"></i> 取消
+			</span>
+		</div>
+	</div>
+
+
+
+	<!-- 重置密码 -->
+	<div class="popup" role="resetPass" width="400" height="250">
+		<!-- 头部 -->
+		<div class="pop_head">
+			<h2 class="title">重置密码</h2>
+			<span class="close_btn" hide="popup" role="resetPass"><i class="fa fa-times fa-lg"></i></span>
+		</div>
+		
+		<!-- 主体 -->
+		<div class="pop_body">
+			<div class="tableWrap resetPass">
+				<table class="stop_user">
+					<tr>
+						<td rowspan="2" align="right">
+							<span class="iconCircle"><i class="fa fa-lock fa-lg"></i></span>
+						</td>
+						<td><h2>重置密码</h2></td>
+					</tr>
+					<tr>
+						<td><span class="txt-default">新密码为: abc123, 确认重置吗?</span></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!-- 尾部 -->
+		<div class="pop_tail">
+			<span class="btn btn-default" hide="popup" role="resetPass" id="submitReset">
+				<i class="fa fa-check"></i> 确认
+			</span>
+			<span class="btn btn-gray" hide="popup" role="resetPass">
+				<i class="fa fa-remove"></i> 取消
+			</span>
+		</div>
+	</div>
+
+
+
+	<!-- 添加/编辑用户 -->
+	<div class="popup" role="addUser" width="500" height="440">
+		<!-- 头部 -->
+		<div class="pop_head">
+			<h2 class="title">添加/编辑用户</h2>
+			<span class="close_btn" hide="popup" role="addUser"><i class="fa fa-times fa-lg"></i></span>
+		</div>
+		
+		<!-- 主体 -->
+		<div class="pop_body">
+			<div class="tableWrap addUser">
+				<table width="100%">
+					<tr>
+						<td>
+							<div class="box_set">
+								<i class="fa fa-asterisk required"></i>
+								<span class="txt-default">用户姓名</span>
+								<input type="text" class="default">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="box_set">
+								<i class="fa fa-asterisk required"></i>
+								<span class="txt-default">用户性别</span>
+								<select name="" id="" class="default">
+									<option value="">男</option>
+									<option value="">女</option>
+								</select>
+								<i class="fa fa-caret-down arrow"></i>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="box_set">
+								<i class="fa fa-asterisk required"></i>
+								<span class="txt-default">登录帐号</span>
+								<input type="text" class="default">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="box_set">
+								<i class="fa fa-asterisk required"></i>
+								<span class="txt-default">角色类型</span>
+								<select name="" id="" class="default">
+									<option value="">A类用户</option>
+									<option value="">B类用户</option>
+									<option value="">C类用户</option>
+								</select>
+								<i class="fa fa-caret-down arrow"></i>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="box_set">
+								<span class="txt-default">备注信息</span>
+								<input type="text" class="default">
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!-- 尾部 -->
+		<div class="pop_tail">
+			<span class="btn btn-default" hide="popup" role="addUser" id="submitAdd">
+				<i class="fa fa-check"></i> 确认
+			</span>
+			<span class="btn btn-gray" hide="popup" role="addUser">
+				<i class="fa fa-remove"></i> 取消
+			</span>
+		</div>
+	</div>
+
+
+
+	<!-- 添加/编辑角色 -->
+	<div class="popup" role="addRole" width="500" height="300">
+		<!-- 头部 -->
+		<div class="pop_head">
+			<h2 class="title">添加/编辑角色</h2>
+			<span class="close_btn" hide="popup" role="addRole"><i class="fa fa-times fa-lg"></i></span>
+		</div>
+		
+		<!-- 主体 -->
+		<div class="pop_body">
+			<div class="tableWrap addRole">
+				<table width="100%">
+					<tr>
+						<td>
+							<div class="box_set">
+								<i class="fa fa-asterisk required"></i>
+								<span class="txt-default">角色名称</span>
+								<input type="text" class="default">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="box_set">
+								<i class="fa fa-asterisk required"></i>
+								<span class="txt-default">角色描述</span>
+								<input type="text" class="default">
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!-- 尾部 -->
+		<div class="pop_tail">
+			<span class="btn btn-default" hide="popup" role="addRole" id="submitAddrole">
+				<i class="fa fa-check"></i> 确认
+			</span>
+			<span class="btn btn-gray" hide="popup" role="addRole">
+				<i class="fa fa-remove"></i> 取消
+			</span>
+		</div>
+	</div>
+
+
+
+	<!-- 停用角色 -->
+	<div class="popup" role="stopRole" width="400" height="250">
+		<!-- 头部 -->
+		<div class="pop_head">
+			<h2 class="title">停用角色</h2>
+			<span class="close_btn" hide="popup" role="stopRole"><i class="fa fa-times fa-lg"></i></span>
+		</div>
+		
+		<!-- 主体 -->
+		<div class="pop_body">
+			<div class="tableWrap">
+				<table width="70%">
+					<tr>
+						<td rowspan="2" align="right">
+							<span class="iconCircle"><i class="fa fa-stop fa-lg"></i></span>
+						</td>
+						<td><h2>停用角色</h2></td>
+					</tr>
+					<tr>
+						<td><span class="txt-default">确认停用此角色及用户吗?</span></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!-- 尾部 -->
+		<div class="pop_tail">
+			<span class="btn btn-default" hide="popup" role="stopRole" id="submitStoprole">
+				<i class="fa fa-check"></i> 确认
+			</span>
+			<span class="btn btn-gray" hide="popup" role="stopRole">
+				<i class="fa fa-remove"></i> 取消
+			</span>
+		</div>
+	</div>
+
+
+
+	<!-- 启用角色 -->
+	<div class="popup" role="startRole" width="400" height="250">
+		<!-- 头部 -->
+		<div class="pop_head">
+			<h2 class="title">启用角色</h2>
+			<span class="close_btn" hide="popup" role="startRole"><i class="fa fa-times fa-lg"></i></span>
+		</div>
+		
+		<!-- 主体 -->
+		<div class="pop_body">
+			<div class="tableWrap startRole">
+				<table width="70%">
+					<tr>
+						<td rowspan="2" align="right">
+							<span class="iconCircle"><i class="fa fa-play fa-lg"></i></span>
+						</td>
+						<td><h2>启用角色</h2></td>
+					</tr>
+					<tr>
+						<td><span class="txt-default">确认启用此角色及用户吗?</span></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!-- 尾部 -->
+		<div class="pop_tail">
+			<span class="btn btn-default" hide="popup" role="startRole" id="submitStartrole">
+				<i class="fa fa-check"></i> 确认
+			</span>
+			<span class="btn btn-gray" hide="popup" role="startRole">
+				<i class="fa fa-remove"></i> 取消
+			</span>
+		</div>
+	</div>
+
+
+
+	<!-- 删除角色 -->
+	<div class="popup" role="removeRole" width="400" height="250">
+		<!-- 头部 -->
+		<div class="pop_head">
+			<h2 class="title">删除角色</h2>
+			<span class="close_btn" hide="popup" role="removeRole"><i class="fa fa-times fa-lg"></i></span>
+		</div>
+		
+		<!-- 主体 -->
+		<div class="pop_body">
+			<div class="tableWrap removeRole">
+				<table width="70%">
+					<tr>
+						<td rowspan="2" align="right">
+							<span class="iconCircle"><i class="fa fa-remove fa-lg"></i></span>
+						</td>
+						<td><h2>删除角色</h2></td>
+					</tr>
+					<tr>
+						<td><span class="txt-default">确认删除此角色及用户吗?</span></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!-- 尾部 -->
+		<div class="pop_tail">
+			<span class="btn btn-default" hide="popup" role="removeRole" id="submitRemoverole">
+				<i class="fa fa-check"></i> 确认
+			</span>
+			<span class="btn btn-gray" hide="popup" role="removeRole">
+				<i class="fa fa-remove"></i> 取消
+			</span>
+		</div>
+	</div>
+
+
+
+	<!-- 查看用户信息 -->
+	<div class="slide" role="viewUser">
+		<!-- 头部 -->
+		<div class="slide_head">
+			<h2 class="title">查看用户信息</h2>
+			<span class="close_btn" role="viewUser" hide="slide">
+				<i class="fa fa-times fa-lg"></i>
+			</span>
+		</div>
+		
+		<!-- 主体 -->
+		<div class="slide_body">
+			<table width="100%">
+				<tr><td colspan="2"></td></tr>
+				<tr>
+					<td width="25%" align="right"><span class="txt-default">用户姓名：</span></td>
+					<td width="75%"><span class="txt-gray">张小江</span></td>
+				</tr>
+				<tr>
+					<td align="right"><span class="txt-default">用户性别：</span></td>
+					<td><span class="txt-gray">男</span></td>
+				</tr>
+				<tr>
+					<td align="right"><span class="txt-default">登录帐号：</span></td>
+					<td><span class="txt-gray">zhangxiaojiang</span></td>
+				</tr>
+				<tr>
+					<td align="right"><span class="txt-default">角色类型：</span></td>
+					<td><span class="txt-gray">企业员工</span></td>
+				</tr>
+				<tr>
+					<td align="right"><span class="txt-default">当前状态：</span></td>
+					<td><span class="lable-ongoing">启用中</span></td>
+				</tr>
+				<tr>
+					<td align="right"><span class="txt-default">添加日期：</span></td>
+					<td><span class="txt-gray">2016-02-23</span></td>
+				</tr>
+				<tr>
+					<td align="right"><span class="txt-default">备注信息：</span></td>
+					<td><span class="txt-gray">华夏大厦配电室主管</span></td>
+				</tr>
+				<tr>
+					<td align="right">
+						<span class="txt-default">查看权限：</span>
+					</td>
+					<td>
+						<div class="peidian">
+							<span class="txt-gray">华夏大厦</span>
+							<span class="txt-default">｜</span>
+							<span class="txt-gray">北京联合大学</span>
+							
+						</div>
+					</td>
+				</tr>
+				
+			</table>
+		</div>
+
+		<!-- 尾部 -->
+		<div class="slide_tail">
+			<span class="btn btn-gray" hide="slide" role="viewUser">
+				<i class="fa fa-remove"></i> 关闭
+			</span>
+		</div>
+	</div>
+
+
+
+	<!-- 配置角色权限 -->
+	<div class="slide" role="viewAccess">
+		<!-- 头部 -->
+		<div class="slide_head">
+			<h2 class="title">配置角色权限</h2>
+			<span class="close_btn" role="viewAccess" hide="slide">
+				<i class="fa fa-times fa-lg"></i>
+			</span>
+		</div>
+		
+		<!-- 主体 -->
+		<div class="slide_body">
+			<table width="100%">
+				<tr><td colspan="2"></td></tr>
+				<tr>
+					<td width="25%" align="right"><span class="txt-default">角色名称：</span></td>
+					<td width="75%"><span class="txt-gray">企业用户</span></td>
+				</tr>
+				<tr>
+					<td align="right"><span class="txt-default">角色描述：</span></td>
+					<td><span class="txt-gray">这是角色描述这是角色描述</span></td>
+				</tr>
+				<tr>
+					<td align="right"><span class="txt-default">角色权限：</span></td>
+					<td>
+						<input type="checkbox" id="peidian01">
+						<label for="peidian01">
+							<span class="txt-gray">华夏大厦配电室</span>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" id="peidian02">
+						<label for="peidian02">
+							<span class="txt-gray">北京联合大学东校区</span>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" id="peidian03">
+						<label for="peidian03">
+							<span class="txt-gray">中华青年政治学院</span>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" id="peidian04">
+						<label for="peidian04">
+							<span class="txt-gray">北京化工大学</span>
+						</label>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" id="peidian06">
+						<label for="peidian05">
+							<span class="txt-gray">腾讯海淀写字楼</span>
+						</label>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+
+		<!-- 尾部 -->
+		<div class="slide_tail">
+			<span class="btn btn-default" hide="slide" role="viewAccess" id="submitAccess">
+				<i class="fa fa-inbox"></i> 保存
+			</span>
+			<span class="btn btn-gray" hide="slide" role="viewAccess">
+				<i class="fa fa-remove"></i> 关闭
+			</span>
+		</div>
+	</div>
+
+
+
+
+
+
+<!-- ******************各种弹出框 结束****************** -->
+
+
+
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/phocus.js"></script>
+	<script src="../js/temp.js"></script>
+</body>
+</html>

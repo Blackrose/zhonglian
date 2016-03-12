@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实时数据</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/phocus.css">
+	<link rel="stylesheet" href="../css/temp.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/datepicker.min.css">
+</head>
+<body>
+	<div class="big_wrap">
+		<div class="titlebar">
+			<table width="100%">
+				<tr>
+					<td width="30"></td>
+					<td>
+						<h1 class="title">实时遥测数据</h1>
+					</td>
+					<td align="right">
+						<span class="txt-default">当前位置: </span>
+						<span class="txt-default">国中大厦</span>
+						<span class="txt-default">/</span>
+						<span class="txt-default">实时遥测数据</span>
+					</td>
+					<td width="30"></td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- 内容区域 -->
+		<div class="container">
+			<!-- 数据表格 -->
+			<br><br>
+			<div class="data_table">
+				<table width="100%">
+					<tr>
+						<th width="10%">线路</th>
+						<th width="10%">A相电压</th>
+						<th width="10%">B相电压</th>
+						<th width="10%">C相电压</th>	
+						<th width="10%">A相电流</th>
+						<th width="10%">B相电流</th>
+						<th width="10%">C相电流</th>
+						<th width="10%">有效功率</th>
+						<th width="10%">无效功率</th>
+						<th width="10%">电量</th>
+					</tr>
+					<tr class="odd">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td>219V</td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="even">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td>219V</td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="odd">
+						<td>221开关</td>
+						<td>230V</td>
+						<td><span class="label_danger">220V</span></td>
+						<td>219V</td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="even">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td><span class="label_danger">220V</span></td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="odd">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td>219V</td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="even">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td><span class="label_danger">220V</span></td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="odd">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td>219V</td>
+						<td>230A</td>
+						<td><span class="label_danger">220V</span></td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="even">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td>219V</td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="odd">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td>219V</td>
+						<td>230A</td>
+						<td><span class="label_danger">220V</span></td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="even">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td>219V</td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+
+					<!-- 分页 -->
+					<tr>
+						<td class="count" colspan="3">
+							共有 <span class="count_num">34</span> 条记录
+							每页显示 <span class="count_num">15</span> 条记录
+						</td>
+						<td colspan="7" class="show_page">
+							<a class="page_num"><i class="fa fa-angle-double-left"></i></a>
+							<a class="page_num"><i class="fa fa-angle-left"></i></a>
+							<a class="page_num pageon">1</a>
+							<a class="page_num">2</a>
+							<a class="page_num">...</a>
+							<a class="page_num">5</a>
+							<a class="page_num"><i class="fa fa-angle-right"></i></a>
+							<a class="page_num"><i class="fa fa-angle-double-right"></i></a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/phocus.js"></script>
+	<script src="../js/temp.js"></script>
+	<script src="../js/datepicker.min.js"></script>
+    <script src="../js/datepicker.zh-CN.js"></script>
+	<script type="text/javascript">     
+        var option = {
+            dateFormat: "yyyy-m-d",
+            autoClose: true,
+            weekStart: 1
+        };
+        $("#startTime").datepicker(option);
+        $("#endTime").datepicker(option);
+    </script>
+</body>
+</html>

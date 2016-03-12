@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>遥信变位</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/phocus.css">
+	<link rel="stylesheet" href="../css/temp.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/datepicker.min.css">
+</head>
+<body>
+	<div class="big_wrap">
+		<div class="titlebar">
+			<table width="100%">
+				<tr>
+					<td width="30"></td>
+					<td>
+						<h1 class="title">遥信变位查询</h1>
+					</td>
+					<td align="right">
+						<span class="txt-default">当前位置: </span>
+						<span class="txt-default">国中大厦</span>
+						<span class="txt-default">/</span>
+						<span class="txt-default">遥信变位查询</span>
+					</td>
+					<td width="30"></td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- 内容区域 -->
+		<div class="container">
+			<!-- 筛选搜索区域 -->
+			<div class="search">
+				<table width="100%">
+					<tr>
+						<td>
+							<!-- 线路开关 -->
+							<span class="sear_title">线路开关: </span>
+							<select name="xianlu" style="width:70px">
+								<option value="">211</option>
+								<option value="">314线路</option>
+							</select>
+							<span class="caret">
+								<i class="fa fa-caret-down"><!-- icon --></i>
+							</span>
+
+							
+							<!-- 遥测变量 -->
+							<span class="sear_title">遥测变量: </span>
+							<select name="xianlu" style="width:70px">
+								<option value="">AQ</option>
+								<option value="">PE</option>
+							</select>
+							<span class="caret">
+								<i class="fa fa-caret-down"><!-- icon --></i>
+							</span>
+
+							
+							<!-- 时间范围 -->
+							<span class="sear_title">时间范围: </span>
+							<input type="text" style="width:100px" id="startTime" placeholder="开始日期">
+							<span class="caret">
+								<i class="fa fa-calendar"><!-- icon --></i>
+							</span>
+							<span class="sear_title">至</span>
+							<input type="text" style="width:100px" id="endTime"  placeholder="结束日期">
+							<span class="caret">
+								<i class="fa fa-calendar"><!-- icon --></i>
+							</span>
+							<span class="btn btn-default">查询
+							</span>
+						</td>
+						<td align="right">
+						<div class="search_set">
+							<input type="text" class="inputbox" style="width:100px" placeholder="厂站名称">
+							<span class="btn btn-default">搜索</span>
+						</div>
+					</td>
+					</tr>
+				</table>
+			</div>
+
+			<!-- 数据表格 -->
+			<div class="data_table">
+				<table width="100%">
+					<tr>
+						<th width="10%">日期</th>
+						<th width="10%">时间</th>
+						<th width="10%">毫秒</th>
+						<th width="10%">厂站</th>
+						<th width="10%">线路</th>
+						<th width="10%">变量</th>
+						<th width="15%">通信状态</th>
+						<th width="10%">数值</th>
+					</tr>
+					<tr class="odd">
+						<td>2016-02-13</td>
+						<td>13:34:12</td>
+						<td>23</td>
+						<td>辐射研究所</td>
+						<td>122线</td>
+						<td>ER</td>
+						<td>正常</td>
+						<td>234E FE2343X</td>
+					</tr>
+					<tr class="even">
+						<td>2016-02-14</td>
+						<td>13:34:12</td>
+						<td>12</td>
+						<td>广电大厦</td>
+						<td>122线</td>
+						<td>ER</td>
+						<td>正常</td>
+						<td>234E FE2343X</td>
+					</tr>
+					<tr class="odd">
+						<td>2016-02-13</td>
+						<td>13:34:12</td>
+						<td>23</td>
+						<td>辐射研究所</td>
+						<td>122线</td>
+						<td>ER</td>
+						<td>正常</td>
+						<td>234E FE2343X</td>
+					</tr>
+					<tr class="even">
+						<td>2016-02-14</td>
+						<td>13:34:12</td>
+						<td>12</td>
+						<td>广电大厦</td>
+						<td>122线</td>
+						<td>ER</td>
+						<td>正常</td>
+						<td>234E FE2343X</td>
+					</tr>
+					<tr class="odd">
+						<td>2016-02-13</td>
+						<td>13:34:12</td>
+						<td>23</td>
+						<td>辐射研究所</td>
+						<td>122线</td>
+						<td>ER</td>
+						<td>正常</td>
+						<td>234E FE2343X</td>
+					</tr>
+					<tr class="even">
+						<td>2016-02-14</td>
+						<td>13:34:12</td>
+						<td>12</td>
+						<td>广电大厦</td>
+						<td>122线</td>
+						<td>ER</td>
+						<td>正常</td>
+						<td>234E FE2343X</td>
+					</tr>
+					<tr class="odd">
+						<td>2016-02-13</td>
+						<td>13:34:12</td>
+						<td>23</td>
+						<td>辐射研究所</td>
+						<td>122线</td>
+						<td>ER</td>
+						<td>正常</td>
+						<td>234E FE2343X</td>
+					</tr>
+					<tr class="even">
+						<td>2016-02-14</td>
+						<td>13:34:12</td>
+						<td>12</td>
+						<td>广电大厦</td>
+						<td>122线</td>
+						<td>ER</td>
+						<td>正常</td>
+						<td>234E FE2343X</td>
+					</tr>
+					<tr class="odd">
+						<td>2016-02-13</td>
+						<td>13:34:12</td>
+						<td>23</td>
+						<td>辐射研究所</td>
+						<td>122线</td>
+						<td>ER</td>
+						<td>正常</td>
+						<td>234E FE2343X</td>
+					</tr>
+					<tr class="even">
+						<td>2016-02-14</td>
+						<td>13:34:12</td>
+						<td>12</td>
+						<td>广电大厦</td>
+						<td>122线</td>
+						<td>ER</td>
+						<td>正常</td>
+						<td>234E FE2343X</td>
+					</tr>
+
+
+
+
+					<!-- 分页 -->
+					<tr>
+						<td class="count" colspan="3">
+							<span class="btn btn-default"><i class="fa fa-share"></i> 导出表格</span>
+							&nbsp;
+							共有 <span class="count_num">34</span> 条记录
+							每页显示 <span class="count_num">15</span> 条记录
+						</td>
+						<td colspan="5" class="show_page">
+							<a class="page_num"><i class="fa fa-angle-double-left"></i></a>
+							<a class="page_num"><i class="fa fa-angle-left"></i></a>
+							<a class="page_num pageon">1</a>
+							<a class="page_num">2</a>
+							<a class="page_num">...</a>
+							<a class="page_num">5</a>
+							<a class="page_num"><i class="fa fa-angle-right"></i></a>
+							<a class="page_num"><i class="fa fa-angle-double-right"></i></a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src="../js/jquery.js"></script>
+	<script src="../js/phocus.js"></script>
+	<script src="../js/temp.js"></script>
+	<script src="../js/datepicker.min.js"></script>
+    <script src="../js/datepicker.zh-CN.js"></script>
+	<script type="text/javascript">     
+        var option = {
+            dateFormat: "yyyy-m-d",
+            autoClose: true,
+            weekStart: 1
+        };
+        $("#startTime").datepicker(option);
+        $("#endTime").datepicker(option);
+    </script>
+</body>
+</html>

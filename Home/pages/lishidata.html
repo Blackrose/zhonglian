@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>历史数据</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/phocus.css">
+	<link rel="stylesheet" href="../css/temp.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/datepicker.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<!-- 标题导航 -->
+	<div class="titlebar">
+		<table width="100%">
+			<tr>
+				<td width="30"></td>
+				<td>
+					<h1 class="title">历史遥测数据</h1>
+				</td>
+				<td align="right">
+					<span class="txt-default">当前位置: </span>
+					<span class="txt-default">国中大厦</span>
+					<span class="txt-default">/</span>
+					<span class="txt-default">历史遥测数据</span>
+				</td>
+				<td width="30"></td>
+			</tr>
+		</table>
+	</div>
+
+	
+	<!-- 内容区域 -->
+		<div class="container">
+			<!-- 筛选搜索区域 -->
+			<div class="search">
+				<table width="100%">
+					<tr>
+						<td>
+							<!-- 线路开关 -->
+							<span class="sear_title">线路开关: </span>
+							<select name="xianlu" style="width:100px">
+								<option value="">选择路线</option>
+								<option value="">211</option>
+								<option value="">314线路</option>
+							</select>
+							<span class="caret">
+								<i class="fa fa-caret-down"><!-- icon --></i>
+							</span>
+
+							
+							<!-- 遥测变量 -->
+							<span class="sear_title">遥测变量: </span>
+							<select name="xianlu" style="width:100px">
+								<option value="">选择变量</option>
+								<option value="">AQ</option>
+								<option value="">PE</option>
+							</select>
+							<span class="caret">
+								<i class="fa fa-caret-down"><!-- icon --></i>
+							</span>
+
+							
+							<!-- 时间范围 -->
+							<span class="sear_title">时间范围: </span>
+							<input type="text" style="width:100px" id="startTime" placeholder="开始日期">
+							<span class="caret">
+								<i class="fa fa-calendar"><!-- icon --></i>
+							</span>
+							<span class="sear_title">至</span>
+							<input type="text" style="width:100px" id="endTime"  placeholder="结束日期">
+							<span class="caret">
+								<i class="fa fa-calendar"><!-- icon --></i>
+							</span>
+							<span class="btn btn-default">
+								<i class="fa fa-search"></i> 查询
+							</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<!-- 数据表格 -->
+			<div class="data_table">
+				<table width="100%">
+					<tr>
+						<th width="33%">日期</th>
+						<th width="33%">时间</th>
+						<th width="33%">数值</th>
+					</tr>
+					<tr class="odd">
+						<td>2015-04-09</td>
+						<td>19:04:22</td>
+						<td><span class="label_danger">+543A</span></td>
+					</tr>
+					<tr class="even">
+						<td>2015-04-10</td>
+						<td>08:24:32</td>
+						<td>+54432A 43V</td>
+					</tr>
+					<tr class="odd">
+						<td>2015-04-09</td>
+						<td>19:04:22</td>
+						<td>+543A 23432LJ</td>
+					</tr>
+					<tr class="even">
+						<td>2015-04-10</td>
+						<td>08:24:32</td>
+						<td>+54432A 43V</td>
+					</tr>
+					<tr class="odd">
+						<td>2015-04-09</td>
+						<td>19:04:22</td>
+						<td><span class="label_danger">+543A</span></td>
+					</tr>
+					<tr class="even">
+						<td>2015-04-10</td>
+						<td>08:24:32</td>
+						<td>+54432A 43V</td>
+					</tr>
+					<tr class="odd">
+						<td>2015-04-09</td>
+						<td>19:04:22</td>
+						<td><span class="label_danger">+543A</span></td>
+					</tr>
+					<tr class="even">
+						<td>2015-04-10</td>
+						<td>08:24:32</td>
+						<td>+54432A 43V</td>
+					</tr>
+					<tr class="odd">
+						<td>2015-04-09</td>
+						<td>19:04:22</td>
+						<td>+543A 23432LJ</td>
+					</tr>
+					<tr class="even">
+						<td>2015-04-10</td>
+						<td>08:24:32</td>
+						<td>+54432A 43V</td>
+					</tr>
+					
+					
+					
+					<!-- 分页 -->
+					<tr>
+						<td class="count">
+							
+							<span class="btn btn-default"><i class="fa fa-share"></i> 导出表格</span>
+							&nbsp;
+							共有 <span class="count_num">34</span> 条记录
+							每页显示 <span class="count_num">15</span> 条记录
+						</td>
+						<td colspan="2" class="show_page">
+							<a class="page_num"><i class="fa fa-angle-double-left"></i></a>
+							<a class="page_num"><i class="fa fa-angle-left"></i></a>
+							<a class="page_num pageon">1</a>
+							<a class="page_num">2</a>
+							<a class="page_num">...</a>
+							<a class="page_num">5</a>
+							<a class="page_num"><i class="fa fa-angle-right"></i></a>
+							<a class="page_num"><i class="fa fa-angle-double-right"></i></a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+
+
+
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/phocus.js"></script>
+	<script src="../js/temp.js"></script>
+	<script src="../js/datepicker.min.js"></script>
+    <script src="../js/datepicker.zh-CN.js"></script>
+	<script type="text/javascript">     
+        var option = {
+            dateFormat: "yyyy-m-d",
+            autoClose: true,
+            weekStart: 1
+        };
+        $("#startTime").datepicker(option);
+        $("#endTime").datepicker(option);
+    </script>
+</body>
+</html>

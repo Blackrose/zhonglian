@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>历史曲线</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/phocus.css">
+	<link rel="stylesheet" href="../css/temp.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/datepicker.min.css" />
+
+</head>
+<body>
+	<div class="titlebar">
+		<table width="100%">
+			<tr>
+				<td width="30"></td>
+				<td>
+					<h1 class="title">历史数据曲线</h1>
+				</td>
+				<td align="right">
+					<span class="txt-default">当前位置: </span>
+					<span class="txt-default">国中大厦</span>
+					<span class="txt-default">/</span>
+					<span class="txt-default">历史数据曲线</span>
+				</td>
+				<td width="30"></td>
+			</tr>
+		</table>
+	</div>
+
+
+
+
+	<!-- 内容区域 -->
+	<div class="container">
+		<!-- 筛选搜索区域 -->
+		<div class="search">
+			<table width="100%">
+				<tr>
+					<td>
+						<!-- 线路开关 -->
+						<span class="sear_title">线路开关: </span>
+						<select name="xianlu" style="width:70px">
+							<option value="">211</option>
+							<option value="">314线路</option>
+						</select>
+						<span class="caret">
+							<i class="fa fa-caret-down"><!-- icon --></i>
+						</span>
+
+						
+						<!-- 遥测变量 -->
+						<span class="sear_title">遥测变量: </span>
+						<select name="xianlu" style="width:70px">
+							<option value="">AQ</option>
+							<option value="">PE</option>
+						</select>
+						<span class="caret">
+							<i class="fa fa-caret-down"><!-- icon --></i>
+						</span>
+
+						
+						<!-- 时间范围 -->
+						<span class="sear_title">时间范围: </span>
+						<input type="text" style="width:90px" id="startTime" placeholder="开始日期">
+						<span class="caret">
+							<i class="fa fa-calendar"><!-- icon --></i>
+						</span>
+						<select name="xianlu" style="width:60px">
+							<option value="">01时</option>
+							<option value="">02时</option>
+							<option value="">03时</option>
+						</select>
+						<span class="caret">
+							<i class="fa fa-caret-down"><!-- icon --></i>
+						</span>
+
+
+						<span class="sear_title">至</span>
+						<input type="text" style="width:90px" id="endTime"  placeholder="结束日期">
+						<span class="caret">
+							<i class="fa fa-calendar"><!-- icon --></i>
+						</span>
+						<select name="xianlu" style="width:60px">
+							<option value="">01时</option>
+							<option value="">02时</option>
+							<option value="">03时</option>
+						</select>
+						<span class="caret">
+							<i class="fa fa-caret-down"><!-- icon --></i>
+						</span>
+					
+
+						<span class="btn btn-default">
+							<i class="fa fa-search"></i> 查询
+						</span>
+						<span class="btn btn-default" show="modal" role="addQuxian">添加曲线
+						</span>
+
+					</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<!-- 数据曲线 -->
+		<div class="data_chart">
+			<div id="lishiQuxian" style="width:100%; height:450px;"></div>
+			<span class="cover"></span>
+		</div>
+	</div>
+
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/phocus.js"></script>
+	<script src="../js/temp.js"></script>
+	<script src="../../Admin/js/temp.js"></script>
+	<script src="../js/datepicker.min.js"></script>
+    <script src="../js/datepicker.zh-CN.js"></script>
+    <script src="../js/highcharts.js"></script>
+    <script src="../js/charts.js"></script>
+	<script type="text/javascript">     
+        var option = {
+            dateFormat: "yyyy-m-d",
+            autoClose: true,
+            weekStart: 1
+        };
+        $("#startTime").datepicker(option);
+        $("#endTime").datepicker(option);
+    </script>
+</body>
+</html>

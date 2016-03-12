@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实时监控</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/phocus.css">
+	<link rel="stylesheet" href="../css/temp.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+<body>
+	<div class="big_wrap">
+		<div class="titlebar">
+			<table width="100%">
+				<tr>
+					<td width="30"></td>
+					<td>
+						<h1 class="title">实时监控</h1>
+					</td>
+					<td align="right">
+						<span class="txt-default">当前位置: </span>
+						<span class="txt-default">国中大厦</span>
+						<span class="txt-default">/</span>
+						<span class="txt-default">实时监控</span>
+					</td>
+					<td width="30"></td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- 内容区域 -->
+		<div class="container">
+			<!-- 实时监控动态图片 -->
+			<div class="img_holder">
+				<ul class="images" status="0">
+					<li><img src="../img/jiankong.png" width="100%" height="auto"></li>
+					<li><img src="../img/jiankong.png" width="100%" height="auto"></li>
+					<li><img src="../img/jiankong.png" width="100%" height="auto"></li>
+					<li><img src="../img/jiankong.png" width="100%" height="auto"></li>
+				</ul>
+				<div class="statusbar">
+					<span class="ongoing"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
+
+
+
+			<!-- 数据表格 -->
+			<div class="data_table">
+				<table width="100%">
+					<tr>
+						<th width="10%">线路</th>
+						<th width="10%">A相电压</th>
+						<th width="10%">B相电压</th>
+						<th width="10%">C相电压</th>	
+						<th width="10%">A相电流</th>
+						<th width="10%">B相电流</th>
+						<th width="10%">C相电流</th>
+						<th width="10%">有效功率</th>
+						<th width="10%">无效功率</th>
+						<th width="10%">电量</th>
+					</tr>
+					<tr class="odd">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td>219V</td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="even">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td>219V</td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="odd">
+						<td>221开关</td>
+						<td>230V</td>
+						<td><span class="label_danger">220V</span></td>
+						<td>219V</td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="even">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td><span class="label_danger">220V</span></td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="odd">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td>219V</td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="even">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td><span class="label_danger">220V</span></td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="odd">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td>219V</td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="even">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td>219V</td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="odd">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td>219V</td>
+						<td>230A</td>
+						<td><span class="label_danger">220V</span></td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="even">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td>219V</td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="odd">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td>219V</td>
+						<td>230A</td>
+						<td><span class="label_danger">220V</span></td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+					<tr class="even">
+						<td>221开关</td>
+						<td>230V</td>
+						<td>220V</td>
+						<td>219V</td>
+						<td>230A</td>
+						<td>220A</td>
+						<td>219A</td>
+						<td>220W</td>
+						<td>219W</td>
+						<td>219W</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/phocus.js"></script>
+	<script src="../js/temp.js"></script>
+	<script>
+		$(document).ready(function(){
+			/*设置轮播框尺寸*/
+			var wrapWidth = $("div.img_holder").width();
+			$("ul.images").width(wrapWidth*4);
+			$("ul.images li").width(wrapWidth);
+
+
+			/*设置轮播图片切换*/
+			$("div.statusbar span").click(function(){
+				var index = $(this).index();
+				var viewWidth = $("div.img_holder").width();
+				if(index==0){
+					$("ul.images").animate({left: "0px"});
+					$("ul.images").attr("status", 0);
+				}
+				if(index==1){
+					$("ul.images").animate({left: "-"+viewWidth+"px"});
+					$("ul.images").attr("status", 1);
+				}
+				if(index==2){
+					$("ul.images").animate({left: "-"+2*viewWidth+"px"});
+					$("ul.images").attr("status", 2);
+				}
+				if(index==3){
+					$("ul.images").animate({left: "-"+3*viewWidth+"px"});
+					$("ul.images").attr("status", 3);
+				}
+				$("div.statusbar span").removeClass("ongoing");
+				$(this).addClass("ongoing");
+			});
+
+
+			/*自动播放*/
+			/*setInterval(function (){
+				var viewWidth = $("div.img_holder").width();
+				var status = $("ul.images").attr("status");
+				if(status==0){
+					$("ul.images").animate({left: "0px"}, function(){
+						$("ul.images").attr("status", 1);
+						$("div.statusbar span").removeClass("ongoing");
+						$("div.statusbar span").eq(0).addClass("ongoing");
+					});
+				}
+				if(status==1){
+					$("ul.images").animate({left: "-"+viewWidth+"px"}, function(){
+						$("ul.images").attr("status", 2);
+						$("div.statusbar span").removeClass("ongoing");
+						$("div.statusbar span").eq(1).addClass("ongoing");
+					});
+				}
+				if(status==2){
+					$("ul.images").animate({left: "-"+2*viewWidth+"px"}, function(){
+						$("ul.images").attr("status", 3);
+						$("div.statusbar span").removeClass("ongoing");
+						$("div.statusbar span").eq(2).addClass("ongoing");
+					});
+				}
+				if(status==3){
+					$("ul.images").animate({left: "-"+3*viewWidth+"px"},function(){
+						$("ul.images").attr("status", 0);
+						$("div.statusbar span").removeClass("ongoing");
+						$("div.statusbar span").eq(3).addClass("ongoing");
+					});
+				}
+			},5000); */			
+		});
+
+		
+	</script>
+</body>
+</html>

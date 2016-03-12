@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中联电力－国际领先的电力服务提供商</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/phocus.css">
+	<link rel="stylesheet" href="../css/temp.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+<body>
+
+	<!-- 页面导航 -->
+	<div class="titlebar">
+		<table width="100%">
+			<tr>
+				<td width="30"></td>
+				<td>
+					<h1 class="title">系统角色</h1>
+				</td>
+				<td align="right">
+					<span class="breadcrum">当前位置: </span>
+					<span class="breadcrum">系统角色</span>
+				</td>
+				<td width="30"></td>
+			</tr>
+		</table>
+	</div>
+
+
+	<!-- 内容区域 -->
+	<div class="container">
+		<!-- 筛选搜索区域 -->
+		<div class="search">
+			<table width="100%">
+				<tr>
+					<td width="200">
+						<div class="select_set">
+							<span class="select_text">角色状态: </span>
+							<select name="xianlu" style="width:100px" class="default small">
+								<option value="">全部</option>
+								<option value="">启用中</option>
+								<option value="">停用中</option>
+							</select>
+							<i class="fa fa-caret-down caret"><!-- icon --></i>
+						</div>
+					</td>
+
+
+					<td align="right">
+						<span class="btn btn-default" show="modal" role="addRole">
+							<i class="fa fa-plus"></i> 添加角色
+						</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- 数据表格 -->
+		<div class="data_table">
+			<table width="100%">
+				<tr>
+					<th width="4%"><input type="checkbox"></th>
+					<th width="8%">角色名称</th>
+					<th width="12%">角色描述</th>
+					<th width="10%">添加时间</th>
+					<th width="6%">用户数量</th>
+					<th width="8%">当前状态</th>
+					<th width="10%">操作</th>
+				</tr>
+				<tr class="odd">
+					<td><input type="checkbox"></td>
+					<td>企业用户</td>
+					<td>这是角色描述描述</td>
+					<td>2016-02-12</td>
+					<td>3</td>
+					<td><span class="lable-ongoing">启用中</span></td>
+					<td>
+						<span class="is_link" show="modal" role="addRole"><i class="fa fa-pencil"></i> 编辑</span>
+						&nbsp;<span style="color:#CCC;">|</span>&nbsp;
+						<span class="is_link" show="slide" role="viewAccess">
+							<i class="fa fa-wrench"></i> 权限
+						</span>
+					</td>
+				</tr>
+				<tr class="even">
+					<td><input type="checkbox"></td>
+					<td>学校用户</td>
+					<td>这是角色描述描述</td>
+					<td>2016-02-12</td>
+					<td>2</td>
+					<td><span class="lable-ongoing">启用中</span></td>
+					<td>
+						<span class="is_link" show="modal" role="addRole"><i class="fa fa-pencil"></i> 编辑</span>
+						&nbsp;<span style="color:#CCC;">|</span>&nbsp;
+						<span class="is_link" show="slide" role="viewAccess">
+							<i class="fa fa-wrench"></i> 权限
+						</span>
+					</td>
+				</tr>
+				<tr class="even">
+					<td><input type="checkbox"></td>
+					<td>政府单位</td>
+					<td>这是角色描述描述</td>
+					<td>2016-02-12</td>
+					<td>5</td>
+					<td><span class="lable-ongoing">启用中</span></td>
+					<td>
+						<span class="is_link" show="modal" role="addRole"><i class="fa fa-pencil"></i> 编辑</span>
+						&nbsp;<span style="color:#CCC;">|</span>&nbsp;
+						<span class="is_link" show="slide" role="viewAccess">
+							<i class="fa fa-wrench"></i> 权限
+						</span>
+					</td>
+				</tr>
+
+
+
+				<!-- 分页 -->
+				<tr>
+					<td class="count" colspan="4">
+						<span class="btn btn-default" show="modal" role="stopRole">
+							<i class="fa fa-stop-circle"></i> 停用
+						</span>
+						<span class="btn btn-default" show="modal" role="startRole">
+							<i class="fa fa-play-circle"></i> 启用
+						</span>
+						<span class="btn btn-default" show="modal" role="removeRole">
+							<i class="fa fa-remove"></i> 删除
+						</span>
+					</td>
+					<td colspan="3" class="show_page">
+						<a class="page_num"><i class="fa fa-angle-double-left"></i></a>
+						<a class="page_num"><i class="fa fa-angle-left"></i></a>
+						<a class="page_num pageon">1</a>
+						<a class="page_num">2</a>
+						<a class="page_num">...</a>
+						<a class="page_num">5</a>
+						<a class="page_num"><i class="fa fa-angle-right"></i></a>
+						<a class="page_num"><i class="fa fa-angle-double-right"></i></a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+
+	
+
+
+
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/phocus.js"></script>
+	<script src="../js/temp.js"></script>
+</body>
+</html>
